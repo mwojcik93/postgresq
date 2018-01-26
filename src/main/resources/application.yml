@@ -1,0 +1,15 @@
+spring:
+    datasource:
+            driver-class-name: org.postgresql.Driver
+            testOnBorrow: true
+            timeBetweenEvictionRunsMillis: 30000
+            url: jdbc:postgresql://localhost:5432/postgres
+            username: postgres
+            password: postgres
+            validationQuery: SELECT 1
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        hibernate:
+            ddl-auto: create
+server:
+  port: 8081
